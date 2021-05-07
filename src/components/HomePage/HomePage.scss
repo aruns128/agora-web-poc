@@ -1,0 +1,53 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .home-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .content {
+      border: 1px solid #eee;
+      padding: 30px;
+      width: 500px;
+      height: 350px;
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+        0 2px 6px 2px rgba(60, 64, 67, 0.149);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .join-button {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .join-button:disabled {
+        background-color: #c1bcbc;
+        color: black;
+      }
+    }
+  }
+}
+
+.player-container {
+  padding: 20px;
+  text-align: initial;
+}
